@@ -14,6 +14,7 @@
 		DF51C1692A20E9AC00B367BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF51C1672A20E9AC00B367BD /* Main.storyboard */; };
 		DF51C16B2A20E9AD00B367BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF51C16A2A20E9AD00B367BD /* Assets.xcassets */; };
 		DF51C16E2A20E9AD00B367BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF51C16C2A20E9AD00B367BD /* LaunchScreen.storyboard */; };
+		DF51C1772A21154F00B367BD /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51C1762A21154F00B367BD /* CurrentWeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DF51C16A2A20E9AD00B367BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF51C16D2A20E9AD00B367BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF51C16F2A20E9AD00B367BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF51C1762A21154F00B367BD /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
 		E6CD179F818AFE49C2396049 /* Pods-Weather App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather App.debug.xcconfig"; path = "Target Support Files/Pods-Weather App/Pods-Weather App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +50,6 @@
 				E6CD179F818AFE49C2396049 /* Pods-Weather App.debug.xcconfig */,
 				C9C340BB21524266D1164DD8 /* Pods-Weather App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +74,7 @@
 		DF51C1602A20E9AC00B367BD /* Weather App */ = {
 			isa = PBXGroup;
 			children = (
+				DF51C1752A21152A00B367BD /* Model */,
 				DF51C1612A20E9AC00B367BD /* AppDelegate.swift */,
 				DF51C1632A20E9AC00B367BD /* SceneDelegate.swift */,
 				DF51C1652A20E9AC00B367BD /* ViewController.swift */,
@@ -82,6 +84,14 @@
 				DF51C16F2A20E9AD00B367BD /* Info.plist */,
 			);
 			path = "Weather App";
+			sourceTree = "<group>";
+		};
+		DF51C1752A21152A00B367BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF51C1762A21154F00B367BD /* CurrentWeatherModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		E3B41F03C2793C738C0DE88E /* Frameworks */ = {
@@ -207,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF51C1772A21154F00B367BD /* CurrentWeatherModel.swift in Sources */,
 				DF51C1662A20E9AC00B367BD /* ViewController.swift in Sources */,
 				DF51C1622A20E9AC00B367BD /* AppDelegate.swift in Sources */,
 				DF51C1642A20E9AC00B367BD /* SceneDelegate.swift in Sources */,
@@ -364,6 +375,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -393,6 +405,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
